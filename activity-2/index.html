@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 2</title>
+</head>
+<body>
+    <img src="char'd.jpg" alt="Char'd Restaurant" width="200" height="200">
+    <br>
+    ,<img src="la merenda.jpg" alt="La Merenda Restaurant" width="200" height="150">
+    <br>
+    <a href="mailto:theppanp@gmatc.matc.edu">Contact Presa</a>
+    <h1>My Favorite Restaurants</h1>
+    <!-- Simple Table -->
+    <table id="simple-table" border="1" cellspacing="0">
+        <tr>
+            <th>Type</th>
+            <th>URL</th>
+        </tr>
+        <tr>
+            <td>Korean</td>
+            <td>
+                <a href="https://www.chardmke.com/">Char'd Homepage</a>
+            </td>
+        </tr>
+        <tr>
+            <td>La Merenda</td>
+            <td>
+                <a href="https://www.lamerenda125.com/">La Merenda Homepage</a>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <!-- Complex Table -->
+    <table id="complex-table" border="1" cellspacing="0">
+        <thead>
+            <tr>
+                <th>Menu</th>
+                <th scope="column">Small Plates</th>
+                <th scope="column">Entrees</th>
+                <th scope="column">Alcoholic Drinks</th>
+                <th scope="column">Moderate To Upscale Price</th>
+                <th scope="column">Have Dined</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">Char'd Korean</td>
+                <td colspan="5">yes</td>
+            </tr>
+            <tr>
+                <td>La Merenda Tapas</td>
+                <td>yes</td>
+                <td colspan="1">no</td>
+                <td colspan="3">yes</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td colspan="6">&copy; Presa Theppanya 2020</td>
+        </tfoot>
+    </table>
+</body>
+</html>
