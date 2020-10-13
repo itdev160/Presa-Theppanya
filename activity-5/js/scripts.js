@@ -16,7 +16,7 @@
             url: 'https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens',
             downloads: 6649914,
             stars: 389,
-            price: 0.00,
+            price: 'Free',
             selector: 'p1'
         },
         {
@@ -26,7 +26,7 @@
             url: 'https://marketplace.visualstudio.com/items?itemName=neilding.language-liquid#overview',
             downloads: 83329,
             stars: 4,
-            price: 0.00,
+            price: 'Free',
             selector: 'p2'
         },
         {
@@ -36,7 +36,7 @@
             url: 'https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync',
             downloads: 2025063,
             stars: 639,
-            price: 0.00,
+            price: 'Free',
             selector: 'p3'
         }
     ];
@@ -48,6 +48,7 @@
         this.url = data.url;
         this.downloads = data.downloads;
         this.stars = data.stars;
+        this.price = data.price;
         this.selector = data.selector;
 
         this.getFormattedDownloads = function () {
@@ -83,7 +84,8 @@
             descEl = getEl(selector + '-description'),
             authEl = getEl(selector + '-author'),
             downloadEl = getEl(selector + '-downloads'),
-            starsEl = getEl(selector + '-stars');
+            starsEl = getEl(selector + '-stars'),
+            priceEl = getEl(selector + '-price');
     
         //Write package to the DOM elements
         nameEl.textContent = package.name;
@@ -91,6 +93,7 @@
         authEl.textContent = package.author;
         downloadEl.textContent = package.getFormattedDownloads();
         starsEl.textContent = package.getFormattedStars();
+        priceEl.textContent = package.price;
     };
 
     //write date
