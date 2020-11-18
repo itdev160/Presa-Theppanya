@@ -18,11 +18,11 @@ function Task (id, name, status) {
 function addTaskElement (task) {
     //creates elements
     var listEl = document.getElementById('active-list');
-    var textEl = document.getElementById('li');
-    var textEl = document.getElementById(task.name);
+    var taskEl = document.createElement('li');
+    var textEl = document.createTextNode(task.name);
 
     //set attribute
-    addTaskElement.setAttribute('id', task.id);
+    taskEl.setAttribute('id', task.id);
 
     //add text to task element
     taskEl.appendChild(textEl);
@@ -40,7 +40,7 @@ function addTask (event) {
 
         //create a new task
         var task = new Task(id, inputEl.value, taskStatus.active);
-        task.push(task);
+        tasks.push(task);
 
         //add the task to the DOM
         addTaskElement(task);
