@@ -16,7 +16,7 @@ function closeModal() {
     var title = get('edit-title-text');
     var text = get('edit-content-text');
     var modal = get('modal-dialog');
-    var backdrop =get('modal-backdrop');
+    var backdrop = get('modal-backdrop');
 
     //clear text
     title.value = '';
